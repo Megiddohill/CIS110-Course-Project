@@ -20,7 +20,7 @@ else:
 print("I think you found our friend\'s favorite smell, well done,\nIts a good smell...", fav_smell, ".\n")
 fav_food = input('Can you taste that? Our friend is trying to remember their favorite meal. Mmm, it\'s... it\'s:  ')
 while len(fav_food) == 0:
-    fav_food = input('Are you trying to starve our buddy? Dog\'s are always hungry you know: ')
+    fav_food = input('Are you trying to starve our buddy? Dogs are always hungry you know: ')
 else:
     print()
 print("Yes! That\'s it!",fav_food,"! Our friend sure knows what\'s good.\n")
@@ -55,10 +55,11 @@ print('You see that you are in a strange but wonderful place. Bright colors and 
 input('Are you ready to continue the journey? Press Enter:  ')
 print()
 print('The voice tells you to be calm. Humans and Dogs can’t see the dark ones on Earth. Only "Knights of the Order of \nthe First Hound" can see and do battle with such creatures, the voice explains, and that you must now \nmake a choice. More pups are being readied to go Earth. But they need training. Dogs on earth are as important \nto keep the dark ones at bay as much as the Order of the First Hound are. The voice invites you to stay and \nteach the young ones all they need to learn to be the best dogs they can be. But you can also choose to go \nback as a spirit and join the Order of the First Hound and fight against the dark ones. Both choices \nare good, and both choices are important. Which one do you choose?\n')
-y = input("What do you feel is right? Choose '1' to stay and '2' to go back:  ")
+
 while True:
-while y != 1 and y != 2:
-    y = int(input("This can't happen. Try another choice:  "))
+    y = input("What do you feel is right? Choose '1' to stay and '2' to go back:  ")
+    if y == '1' or y == '2':
+        break
 if x == 1 and y == 2:
     print('The voice sounds impressed and moved. It says that this is not an easy path. But you were brave in life, \nthat bravery echoes into a dog’s afterlife. The next steps you take will be into the Order of the First Hound. \n“Are you ready? “ Is the voice’s last words and without a moment’s hesitation your howl fills the \nheavens around you, and they dissolve into a light so bright you have to close your eyes… when you open \nthem you know what comes next is something only a bark can describe.\n')
 elif x != 1 and y == 2:
@@ -66,4 +67,4 @@ elif x != 1 and y == 2:
 else:
     print('Choosing to stay, the voice senses your decision, “You’ve done a good service on Earth.”, says the \nvoice. “The young ones here need you to teach them to stay, to bark, to comfort and bring joy, to wag their \ntails, and to howl, because howling is a secret language that encourages the Knights of the Order and gives \nthem strength to face the darkness.” You look down and at your paws is the smallest',sec_breed,'you’ve \never seen, feebly moving its tail up, down, and sideways, scenting in the fresh air and seeing the golden sky. \nYou inhale deeply before giving your new pup its first lesson on how to be a proper dog.\n')
 print("The connection breaks as our friend takes their rightful place in the universe. \nRemember that a dog's journey never really ends, anymore than our own journeys. \nIt's the choices that takes us along the path, so be careful with your own.\n" )
-input('Are you ready to continue your journey?Press Enter: ')
+
