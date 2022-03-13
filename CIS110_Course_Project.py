@@ -68,3 +68,4 @@ else:
     print('Choosing to stay, the voice senses your decision, “You’ve done a good service on Earth.”, says the \nvoice. “The young ones here need you to teach them to stay, to bark, to comfort and bring joy, to wag their \ntails, and to howl, because howling is a secret language that encourages the Knights of the Order and gives \nthem strength to face the darkness.” You look down and at your paws is the smallest',sec_breed,'you’ve \never seen, feebly moving its tail up, down, and sideways, scenting in the fresh air and seeing the golden sky. \nYou inhale deeply before giving your new pup its first lesson on how to be a proper dog.\n')
 print("The connection breaks as our friend takes their rightful place in the universe. \nRemember that a dog's journey never really ends, anymore than our own journeys. \nIt's the choices that takes us along the path, so be careful with your own.\n" )
 
+input('press any key to continue:  ')
